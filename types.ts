@@ -1,3 +1,4 @@
+
 export enum TourType {
   CLASSIC = 'CLASSIC',
   FAMILY = 'FAMILY',
@@ -30,4 +31,8 @@ export interface TourPackage {
   itinerary: ItineraryItem[];
   lunchOptions?: LunchOption[];
   priceEstimate?: string; // Optional price range
+  specialService?: {
+    title: string;
+    description: string;
+  };
 }

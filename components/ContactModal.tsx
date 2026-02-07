@@ -8,7 +8,7 @@ interface ContactModalProps {
 
 const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const [copied, setCopied] = React.useState(false);
-  const wechatId = "Stockholm_Guide_VIP"; // Placeholder
+  const wechatId = "Hans200121"; // Placeholder
 
   const handleCopy = () => {
     navigator.clipboard.writeText(wechatId);

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, MapPin, Navigation, Camera, Utensils, Footprints, Car, Sun, Sunset, Coffee } from 'lucide-react';
+import { X, MapPin, Navigation, Camera, Utensils, Footprints, Car, Sun, Sunset, Coffee, HeartHandshake } from 'lucide-react';
 import { TourPackage } from '../types';
 
 interface ItineraryDetailProps {
@@ -92,6 +92,19 @@ const ItineraryDetail: React.FC<ItineraryDetailProps> = ({ pkg, onClose, onConta
                  <p className="text-slate-600 leading-relaxed text-sm md:text-base">{pkg.description}</p>
               </div>
             </div>
+
+            {/* Special Service (Added Feature) */}
+            {pkg.specialService && (
+                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-2xl border border-emerald-100 mb-8 flex gap-4 items-start">
+                    <div className="bg-white p-2 rounded-full text-emerald-600 shadow-sm shrink-0">
+                        <HeartHandshake size={24} />
+                    </div>
+                    <div>
+                        <h4 className="font-bold text-emerald-800 text-base mb-1">{pkg.specialService.title}</h4>
+                        <p className="text-sm text-emerald-700/80 leading-relaxed">{pkg.specialService.description}</p>
+                    </div>
+                </div>
+            )}
 
             {/* Timeline */}
             <div>

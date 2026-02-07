@@ -4,6 +4,7 @@ import WhyUs from './components/WhyUs';
 import ProductList from './components/ProductList';
 import ItineraryDetail from './components/ItineraryDetail';
 import ContactModal from './components/ContactModal';
+import FAQ from './components/FAQ';
 import { TourPackage } from './types';
 import { TESTIMONIALS } from './constants';
 import { Quote, MessageCircle, Instagram, Facebook } from 'lucide-react';
@@ -61,6 +62,10 @@ export default function App() {
             ))}
           </div>
         </section>
+
+        {/* Q&A Section */}
+        <FAQ onContact={() => setIsContactOpen(true)} />
+
       </main>
 
       {/* Footer */}
