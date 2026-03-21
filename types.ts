@@ -2,7 +2,7 @@
 export enum TourType {
   CLASSIC = 'CLASSIC',
   FAMILY = 'FAMILY',
-  PHOTO = 'PHOTO'
+  BUSINESS = 'BUSINESS'
 }
 
 export interface ItineraryItem {
@@ -11,7 +11,7 @@ export interface ItineraryItem {
   description: string;
   highlight?: string;
   note?: string; // e.g. ticket price
-  iconType?: 'walk' | 'car' | 'food' | 'photo' | 'landmark';
+  iconType?: 'walk' | 'car' | 'food' | 'photo' | 'landmark' | 'business';
 }
 
 export interface LunchOption {

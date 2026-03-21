@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { X, MapPin, Navigation, Camera, Utensils, Footprints, Car, Sun, Sunset, Coffee, HeartHandshake } from 'lucide-react';
-import { TourPackage } from '../types';
+import { X, MapPin, Navigation, Camera, Utensils, Footprints, Car, Sun, Sunset, Coffee, HeartHandshake, Briefcase } from 'lucide-react';
+import { TourPackage, TourType } from '../types';
 
 interface ItineraryDetailProps {
   pkg: TourPackage;
@@ -15,6 +15,7 @@ const getIcon = (type?: string) => {
     case 'food': return <Utensils size={18} />;
     case 'photo': return <Camera size={18} />;
     case 'landmark': return <MapPin size={18} />;
+    case 'business': return <Briefcase size={18} />;
     default: return <Navigation size={18} />;
   }
 };
@@ -81,7 +82,7 @@ const ItineraryDetail: React.FC<ItineraryDetailProps> = ({ pkg, onClose, onConta
             <div className="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm mb-8">
               <div className="flex items-start gap-4 mb-4">
                  <div className="bg-orange-100 p-2 rounded-lg text-orange-600 shrink-0 mt-1">
-                     <Sun size={20} />
+                     {pkg.id === TourType.BUSINESS ? <Briefcase size={20} /> : <Sun size={20} />}
                  </div>
                  <div>
                     <h4 className="font-bold text-slate-800 text-sm mb-1">💡 适合人群</h4>
@@ -112,7 +113,7 @@ const ItineraryDetail: React.FC<ItineraryDetailProps> = ({ pkg, onClose, onConta
                 <span className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-900 text-white text-xs">
                     <Navigation size={14} />
                 </span>
-                参考行程 (可随时灵活调整)
+                {pkg.id === TourType.BUSINESS ? '服务内容' : '参考行程 (可随时灵活调整)'}
               </h3>
               
               <div className="relative border-l-2 border-stone-200 ml-4 space-y-10 pb-4">
@@ -144,7 +145,7 @@ const ItineraryDetail: React.FC<ItineraryDetailProps> = ({ pkg, onClose, onConta
                       
                       {item.highlight && (
                         <div className="text-sm bg-orange-50 text-orange-900 px-4 py-3 rounded-lg border border-orange-100/50 flex gap-2 items-start">
-                          <span className="font-bold shrink-0">✨ 体验:</span> 
+                          <span className="font-bold shrink-0">✨ 亮点:</span> 
                           <span className="opacity-90">{item.highlight}</span>
                         </div>
                       )}
@@ -159,7 +160,7 @@ const ItineraryDetail: React.FC<ItineraryDetailProps> = ({ pkg, onClose, onConta
               {pkg.lunchOptions && (
                 <div className="mt-8 bg-gradient-to-br from-white to-stone-50 p-6 rounded-2xl border border-stone-100">
                   <h4 className="font-bold text-slate-800 text-sm mb-4 flex items-center gap-2">
-                    <Utensils size={16} className="text-orange-500" /> 午餐推荐 (根据您口味选择)
+                    <Utensils size={16} className="text-orange-500" /> 餐饮推荐
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {pkg.lunchOptions.map((lunch, i) => (
@@ -180,7 +181,7 @@ const ItineraryDetail: React.FC<ItineraryDetailProps> = ({ pkg, onClose, onConta
           {/* Bottom Action Bar */}
           <div className="bg-white border-t border-stone-100 p-6 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] shrink-0 flex flex-col sm:flex-row items-center gap-4 justify-between z-10">
             <div className="text-xs text-stone-400 hidden sm:block">
-                <p>感兴趣这个路线？</p>
+                <p>感兴趣这个方案？</p>
                 <p>联系我们获取详细报价单</p>
             </div>
             <button 

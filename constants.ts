@@ -99,40 +99,45 @@ export const TOUR_PACKAGES: TourPackage[] = [
     ]
   },
   {
-    id: TourType.PHOTO,
-    title: "小众秘境｜人像摄影 & 氛围感之旅",
-    subtitle: "避开游客 · 电影感 · 深度体验",
-    tags: ["摄影/情侣", "小众路线", "网红出片"],
-    idealFor: "情侣、年轻女孩、摄影爱好者。不想拍游客照，想要朋友圈高赞大片。",
-    description: "我不带你去全是游客的皇宫门口。我带你去斯德哥尔摩的地铁艺术长廊、孤独的灯塔、当地设计师的买手店。我们要的是“氛围感”。",
-    coverImage: "https://picsum.photos/id/338/800/600",
+    id: TourType.BUSINESS,
+    title: "商务出行｜企业考察 & 商务接待",
+    subtitle: "KTH/SSE校友团队 · 商务翻译 · 行业对接",
+    tags: ["企业考察", "展会接待", "商务翻译", "公务出行"],
+    idealFor: "企业商务考察团、公司团建、客户拜访、项目落地、展会出行、政府交流、投资考察。",
+    description: "我们不仅提供包车与接待服务，更为企业提供高质量商务支持与本地资源协助。团队成员毕业于瑞典皇家理工 (KTH) 和斯德哥尔摩经济学院 (SSE)，熟悉瑞典商业环境、沟通文化与本地政策流程，能够在正式商务场景中提供专业支持。",
+    coverImage: "https://picsum.photos/id/1031/800/600", // Business/City vibe
+    specialService: {
+        title: "专业背景支持",
+        description: "理工科背景逻辑清晰，理解中国企业思维与瑞典商务文化，不仅是导游，更是本地合作伙伴。"
+    },
     itinerary: [
       {
-        time: "上午",
-        location: "斯德哥尔摩地铁艺术巡礼",
-        description: "世界最长的地下画廊。我们不赶时间，精选3个最出片的蓝色/彩虹车站。",
-        highlight: "指导最佳构图机位，拍出空无一人的大片感。",
-        iconType: 'photo'
+        time: "服务壹",
+        location: "商务包车与行程规划",
+        description: "机场接送、企业拜访接送、展会论坛接送。行程合理优化（避免城市高峰与绕路）。",
+        highlight: "专业司机、准时守时、行程保密。",
+        iconType: 'car'
       },
       {
-        time: "中午",
-        location: "Södermalm 复古区",
-        description: "瑞典的布鲁克林。午餐在当地网红咖啡馆解决。",
-        highlight: "充满古着店、彩色木屋，每一面墙都好拍。",
+        time: "服务贰",
+        location: "商务陪同翻译",
+        description: "企业会议翻译、客户拜访陪同、工厂/项目现场翻译、展会现场沟通协助。",
+        highlight: "理解北欧商务沟通文化，避免误解，提高效率。",
+        iconType: 'business'
+      },
+      {
+        time: "服务叁",
+        location: "企业考察定制路线",
+        description: "绿色科技/可持续发展、新能源、循环经济、智慧城市；或创新与科技考察（初创企业、孵化器、科研机构）。",
+        highlight: "可根据具体行业需求深度定制。",
+        iconType: 'landmark'
+      },
+      {
+        time: "服务肆",
+        location: "公司团建 & 高端体验",
+        description: "商务之余的品质体验：老城定制City Walk（轻松版）、北欧设计文化体验、私人晚宴推荐、小型高端包船/海岛体验。",
+        highlight: "让商务之行更有品质。",
         iconType: 'food'
-      },
-      {
-        time: "下午",
-        location: "小众观景台 & 孤独灯塔",
-        description: "去游客找不到的Monteliusvägen，俯瞰整个老城。",
-        highlight: "等待北欧特有的柔和光线，拍摄情绪人像。",
-        iconType: 'walk'
-      },
-      {
-        time: "傍晚",
-        location: "城市日落 / 图书馆",
-        description: "在极简风的北欧建筑中，或在余晖洒满的海边，结束浪漫的一天。",
-        iconType: 'photo'
       }
     ]
   }

@@ -27,9 +27,12 @@ const Hero: React.FC<HeroProps> = ({ onExplore }) => {
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight shadow-sm leading-tight">
-            不做游客，<br className="md:hidden" />
-            做一天<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-white">北欧当地人</span>。
-          </h1>
+  不做游客，<br className="md:hidden" />
+  做一天
+  <span className="whitespace-nowrap text-2xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-white">
+    北欧当地人
+  </span>。
+</h1>
           
           <p className="text-stone-200 text-base md:text-xl mb-10 leading-relaxed max-w-lg mx-auto font-light">
             解决语言焦虑，告别千篇一律的打卡。<br />
