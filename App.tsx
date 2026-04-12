@@ -26,7 +26,7 @@ export default function App() {
       {/* Navigation / Header (Simple) */}
       <nav className="absolute top-0 left-0 right-0 z-50 p-6 flex justify-between items-center max-w-7xl mx-auto w-full">
         <div className="text-white font-bold text-lg tracking-wider bg-black/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20">
-          NORDIC PRIVATE
+          WeTravel
         </div>
         <button 
           onClick={() => setIsContactOpen(true)}
@@ -46,7 +46,7 @@ export default function App() {
         <section className="px-6 py-20 bg-white rounded-3xl mx-4 my-8 shadow-sm">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-800 mb-4">客户真实评价</h2>
-            <p className="text-slate-500">不用听我们怎么说，听听体验过这里的朋友怎么说</p>
+            <p className="text-slate-500">不用听我们怎么说，听听老客户的真实评价</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
