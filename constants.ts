@@ -2,7 +2,7 @@ import { TourPackage, TourType } from './types';
 import image1 from 'pic/Image_20260503152406_132_228.jpg';
 import image2 from 'pic/Image_20260503152534_141_228.jpg';
 import image3 from 'pic/Image_20260503152525_137_228.jpg';
-import image3 from 'pic/Image_20260503152408_133_228.jpg';
+import image4 from 'pic/Image_20260503152408_133_228.jpg';
 
 // Images sourced from picsum (placeholders)
 export const HERO_IMAGE = "https://picsum.photos/id/1036/1600/900"; // Wider image for desktop
