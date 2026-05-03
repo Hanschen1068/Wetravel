@@ -1,7 +1,4 @@
 import { TourPackage, TourType } from './types';
-import image1 from './src/assets/images/regenerated_image_1777815025776.jpg';
-import image2 from './src/assets/images/regenerated_image_1777815028974.jpg';
-import image3 from './src/assets/images/regenerated_image_1777815029843.jpg';
 
 // Images sourced from picsum (placeholders)
 export const HERO_IMAGE = "https://picsum.photos/id/1036/1600/900"; // Wider image for desktop
@@ -15,7 +12,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
     tags: ["带父母首选", "体力友好", "行程灵活"],
     idealFor: "第一次来瑞典的家庭 / 爸妈同行。担心老人走不动，或者孩子太小需要午休。",
     description: "这不是一个需要早起的旅行团。我们将行程节奏放慢好好体会北欧人的慵懒感，主打车览风景+平地散步，随时可以停车休息。围绕家庭状态，而不是“走完所有景点”。",
-    coverImage: image1,
+    coverImage: "https://picsum.photos/id/292/800/600",
     specialService: {
         title: "赠送：【带爸妈来北欧的安心支持】",
         description: "行程前30分钟语音/咨询。解答SIM卡怎么办、该带什么衣服、注意事项等行前焦虑，让父母安心出发。"
@@ -62,7 +59,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
     tags: ["年轻人首选", "听故事", "City Walk", "高性价比"],
     idealFor: "第一次来斯德哥尔摩的年轻游客。喜欢听故事、拍照、城市漫步。不想太赶、不想太贵，想用半天时间真正“认识”这座城市。",
     description: "这是一次以故事为主线的城市漫步，不是走马观花式打卡，也不是严肃的历史课堂。约 2–2.5 小时，节奏轻松，边走边拍，适合拍照与社交。",
-    coverImage: image2, // Subway/Urban vibe
+    coverImage: "https://picsum.photos/id/1033/800/600", // Subway/Urban vibe
     priceEstimate: "拼团约 300-500 SEK/人 (小团)",
     itinerary: [
       {
@@ -108,7 +105,7 @@ export const TOUR_PACKAGES: TourPackage[] = [
     tags: ["企业考察", "展会接待", "商务翻译", "公务出行"],
     idealFor: "企业商务考察团、公司团建、客户拜访、项目落地、展会出行、政府交流、投资考察。",
     description: "我们不仅提供包车与接待服务，更为企业提供高质量商务支持与本地资源协助。团队成员毕业于瑞典皇家理工 (KTH) 和斯德哥尔摩经济学院 (SSE)，熟悉瑞典商业环境、沟通文化与本地政策流程，能够在正式商务场景中提供专业支持。",
-    coverImage: image3, // Business/City vibe
+    coverImage: "https://picsum.photos/id/1031/800/600", // Business/City vibe
     specialService: {
         title: "专业背景支持",
         description: "理工科背景逻辑清晰，理解中国企业思维与瑞典商务文化，不仅是导游，更是本地合作伙伴。"
