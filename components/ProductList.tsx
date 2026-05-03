@@ -28,11 +28,12 @@ const ProductList: React.FC<ProductListProps> = ({ onSelect }) => {
               className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-100 cursor-pointer flex flex-col h-full"
             >
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-slate-200" /> {/* Placeholder while loading */}
+                <div className="absolute inset-0 bg-slate-200 animate-pulse" /> {/* Placeholder while loading */}
                 <img 
                   src={pkg.coverImage} 
                   alt={pkg.title} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 left-4 flex flex-wrap gap-2 pr-4">
                   {pkg.tags.map((tag, i) => (
