@@ -14,6 +14,7 @@ const ProductList: React.FC<ProductListProps> = ({ onSelect }) => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">热门路线方案</h2>
+            <p className="text-slate-500">把“包车”包装成明确的产品，针对不同需求精心设计</p>
           </div>
           <div className="text-sm text-stone-400">
             *所有路线均可根据当天情况微调

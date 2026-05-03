@@ -24,6 +24,7 @@ const WhyUs: React.FC = () => {
     <div className="bg-white py-16 px-6 -mt-10 relative z-10 max-w-6xl mx-auto rounded-3xl shadow-xl border border-stone-100 mb-12">
       <div className="mb-12 text-center max-w-2xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">为什么选择我们？</h2>
+        <p className="text-slate-500">别想着“怎么接更多单”，我们只思考：如何解决您在瑞典的焦虑。</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
