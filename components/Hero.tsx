@@ -26,17 +26,17 @@ const Hero: React.FC<HeroProps> = ({ onExplore }) => {
             <span className="text-sm font-medium text-white tracking-widest uppercase">Sweden · Stockholm</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight shadow-sm leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-[0_4px_10px_rgba(0,0,0,0.6)] leading-tight">
   不做游客，<br className="md:hidden" />
   做一天
-  <span className="whitespace-nowrap text-2xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-white">
+  <span className="whitespace-nowrap text-2xl md:text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.6)]">
     北欧当地人
   </span>。
 </h1>
           
-          <p className="text-stone-200 text-base md:text-xl mb-10 leading-relaxed max-w-lg mx-auto font-light">
+          <p className="text-white text-base md:text-xl mb-10 leading-relaxed max-w-lg mx-auto font-medium drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
             解决语言焦虑，告别千篇一律的打卡。<br />
-            为您提供更有温度的<strong className="text-white font-medium">私享中文包车</strong>体验。
+            为您提供更有温度的<strong className="text-white font-bold">私享中文包车</strong>体验。
           </p>
 
           <button 

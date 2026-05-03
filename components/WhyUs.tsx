@@ -10,8 +10,8 @@ const WhyUs: React.FC = () => {
     },
     {
       icon: <ShieldCheck className="text-green-600" size={28} />,
-      title: "正规安全 不踩坑",
-      desc: "只做正规包车，熟悉当地交规与路况。拒绝隐形消费，拒绝强制购物，给您最纯粹的旅行体验。"
+      title: "安全出行 不踩坑",
+      desc: "熟悉当地交规与路况。拒绝隐形消费，拒绝强制购物，给您最纯粹的旅行体验。"
     },
     {
       icon: <Clock className="text-blue-500" size={28} />,
@@ -24,7 +24,6 @@ const WhyUs: React.FC = () => {
     <div className="bg-white py-16 px-6 -mt-10 relative z-10 max-w-6xl mx-auto rounded-3xl shadow-xl border border-stone-100 mb-12">
       <div className="mb-12 text-center max-w-2xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">为什么选择我们？</h2>
-        <p className="text-slate-500">别想着“怎么接更多单”，我们只思考：如何解决您在瑞典的焦虑。</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

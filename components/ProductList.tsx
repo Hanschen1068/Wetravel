@@ -14,7 +14,6 @@ const ProductList: React.FC<ProductListProps> = ({ onSelect }) => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">热门路线方案</h2>
-            <p className="text-slate-500">把“包车”包装成明确的产品，针对不同需求精心设计</p>
           </div>
           <div className="text-sm text-stone-400">
             *所有路线均可根据当天情况微调
@@ -29,12 +28,11 @@ const ProductList: React.FC<ProductListProps> = ({ onSelect }) => {
               className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-100 cursor-pointer flex flex-col h-full"
             >
               <div className="relative h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-slate-200 animate-pulse" /> {/* Placeholder while loading */}
+                <div className="absolute inset-0 bg-slate-200" /> {/* Placeholder while loading */}
                 <img 
                   src={pkg.coverImage} 
                   alt={pkg.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4 flex flex-wrap gap-2 pr-4">
                   {pkg.tags.map((tag, i) => (
